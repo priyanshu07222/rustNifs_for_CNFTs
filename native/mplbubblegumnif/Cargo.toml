@@ -10,7 +10,8 @@ path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-borsh = "1.5.5"
+base64 = "0.21"
+borsh = ">= 0.9, < 1.0"
 mpl-bubblegum = "1.4.0"
 rustler = "0.29.0"
 serde = "1.0.218"

@@ -1,21 +1,23 @@
-# RustNifsForElixir
+# Rust NIFs for Elixir: Metaplex Bubblegum Integration
 
-**TODO: Add description**
+This project provides Native Implemented Functions (NIFs) to bridge the `mpl-bubblegum` Rust crate from Metaplex to Elixir, enabling Elixir developers to create, mint, and transfer compressed NFTs on Solana.
 
-## Installation
+## Features
+- Create Merkle tree configurations for compressed NFTs.
+- Mint compressed NFTs using `MintV1`.
+- Transfer compressed NFTs between owners.
+- Error handling and transaction submission to Solana devnet.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `rust_nifs_for_elixir` to your list of dependencies in `mix.exs`:
+## Setup Instructions
 
+### Prerequisites
+- Elixir 1.12+ and Erlang/OTP 24+
+- Rust 1.65+ with `cargo`
+- Solana devnet keypairs for testing
+
+### Dependencies
+Add to your `mix.exs`:
 ```elixir
-def deps do
-  [
-    {:rust_nifs_for_elixir, "~> 0.1.0"}
-  ]
+defp deps do
+  [{:jason, "~> 1.4"}]
 end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/rust_nifs_for_elixir>.
-
